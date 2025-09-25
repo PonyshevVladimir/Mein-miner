@@ -217,6 +217,15 @@ details[open] > summary:before {
     border: 0;
 
 }
+
+.buy:hover{
+    box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.4);
+    background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%);
+}
+
+.buy:active{
+    background: rgba(24, 21, 75, 0.6);
+}
 /* footer */
 
 .page-footer{
@@ -258,6 +267,17 @@ details[open] > summary:before {
     background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%);
     border: 0;
     margin: auto 30px;
+
+    
+}
+
+.button:hover{
+    box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.4);
+    background: linear-gradient(25deg, #0d748b 0%, #1a0b73 100%);
+}
+
+.button:active{
+    background: rgba(24, 21, 75, 0.6);
 }
 .button-white{
     border-radius: 50px;
@@ -265,6 +285,14 @@ details[open] > summary:before {
     height: 50px;
     background-color: white;
     border: 0;
+}
+.button-white:hover{
+    box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.4);
+    background: #fff;
+}
+
+.button-white:active{
+    background: rgba(255, 255, 255, 0.15)
 }
 .button-text{
     font-weight: 700;
@@ -432,3 +460,4 @@ input::placeholder {color: #fff; padding-left: 20px;}
 .button-1{
     position: absolute;
 }
+

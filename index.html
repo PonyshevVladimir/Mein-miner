@@ -27,7 +27,8 @@
         </section>
         
         <section class="main-navigation">
-            <div class="wrapper"><div class="main-navigation-box">
+            <div class="wrapper">
+                <div class="main-navigation-box">
                 <img src="img/logo.svg" alt="" class="header-logo">
                 <ul class="header-navigation">
                     <li class="navigation-item"><a>Каталог товаров</a></li>
@@ -61,9 +62,6 @@
                 Если вы хотите купить асики оптом, то с нами можете быть уверены как в качестве техники,
                  так и в надёжности сотрудничества. Лучше всего о нас говорит репутация!</p>
             
-           
-           
-
             <ul class="adventages-list">
 
                 <li class="advantges-list-item">
@@ -117,9 +115,9 @@
                 <p class="heading-white">свяжитесь с нами, мы вам поможем!</p>
                 <p class="forms-helps">Заполните форму и мы свяжемся с Вами в ближайшее время</p>
                 <div class="forms">   
-                    <input class="form" type="text" placeholder="Ваше имя">
-                    <input class="form"type="phone" placeholder="Ваш телефон">
-                    <button class="button-white"><p class="button-text-white">Отправить</p></button>
+                    <input id="name" class="form" type="text" placeholder="Ваше имя">
+                    <input id="phone" class="form"type="phone" placeholder="Ваш телефон">
+                    <button id="button" class="button-white"><p class="button-text-white">Отправить</p></button>
                 </div>
                 <label class="forms-label"><input type="checkbox">Согласен на обработку персональных данных</label>
             </div>
@@ -300,5 +298,16 @@
 
 
     </footer>
+
+    <script>
+    const send = () => {
+    let n = document.getElementById('name').value;  
+    let p = document.getElementById('phone').value;  
+    console.log('"name":', '"', n, '"', ",", '"tel":', '"', p, '"');   
+    }
+    const button = document.querySelector('#button');
+    button.addEventListener('click', send);
+    </script>
+
 </body>
 </html>
